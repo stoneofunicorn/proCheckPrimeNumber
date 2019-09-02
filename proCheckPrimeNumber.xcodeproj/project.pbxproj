@@ -3,17 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A93272B7BE9DDF32EC4186 /* Pods_proCheckPrimeNumberUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A45E67D8B6DC20A2DF5A04 /* Pods_proCheckPrimeNumberUITests.framework */; };
+		32F11A3CB73CF545CC14BD88 /* Pods_proCheckPrimeNumberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052CB193CF74C6E429704838 /* Pods_proCheckPrimeNumberTests.framework */; };
 		63CB7964231BFB62001C8E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7963231BFB62001C8E2B /* AppDelegate.swift */; };
-		63CB7966231BFB62001C8E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7965231BFB62001C8E2B /* ViewController.swift */; };
-		63CB7969231BFB62001C8E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB7967231BFB62001C8E2B /* Main.storyboard */; };
+		63CB7966231BFB62001C8E2B /* MainCheckPrimeNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7965231BFB62001C8E2B /* MainCheckPrimeNumberViewController.swift */; };
+		63CB7969231BFB62001C8E2B /* maincheckprimenumberview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB7967231BFB62001C8E2B /* maincheckprimenumberview.storyboard */; };
 		63CB796B231BFB67001C8E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CB796A231BFB67001C8E2B /* Assets.xcassets */; };
 		63CB796E231BFB67001C8E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB796C231BFB67001C8E2B /* LaunchScreen.storyboard */; };
 		63CB7979231BFB67001C8E2B /* proCheckPrimeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7978231BFB67001C8E2B /* proCheckPrimeNumberTests.swift */; };
 		63CB7984231BFB67001C8E2B /* proCheckPrimeNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7983231BFB67001C8E2B /* proCheckPrimeNumberUITests.swift */; };
+		63CB7997231C08B6001C8E2B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7996231C08B6001C8E2B /* View.swift */; };
+		63CB7999231C0A79001C8E2B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7998231C0A79001C8E2B /* Button.swift */; };
+		63CB799B231C1627001C8E2B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB799A231C1627001C8E2B /* SessionManager.swift */; };
+		63CB799E231C1F65001C8E2B /* sessionHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB799D231C1F65001C8E2B /* sessionHistoryModel.swift */; };
+		BB746DCDE59B63EC4E02AC2D /* Pods_proCheckPrimeNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F5AA4530679F88642CB545 /* Pods_proCheckPrimeNumber.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052CB193CF74C6E429704838 /* Pods_proCheckPrimeNumberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proCheckPrimeNumberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0BDDEB70E23E64072423D5 /* Pods-proCheckPrimeNumberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumberTests.debug.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumberTests/Pods-proCheckPrimeNumberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37F5AA4530679F88642CB545 /* Pods_proCheckPrimeNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proCheckPrimeNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4B96DC93BD3D7F09817A9 /* Pods-proCheckPrimeNumberUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumberUITests.debug.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumberUITests/Pods-proCheckPrimeNumberUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58A45E67D8B6DC20A2DF5A04 /* Pods_proCheckPrimeNumberUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proCheckPrimeNumberUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CB7960231BFB62001C8E2B /* proCheckPrimeNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proCheckPrimeNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CB7963231BFB62001C8E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63CB7965231BFB62001C8E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63CB7968231BFB62001C8E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63CB7965231BFB62001C8E2B /* MainCheckPrimeNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCheckPrimeNumberViewController.swift; sourceTree = "<group>"; };
+		63CB7968231BFB62001C8E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/maincheckprimenumberview.storyboard; sourceTree = "<group>"; };
 		63CB796A231BFB67001C8E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CB796D231BFB67001C8E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63CB796F231BFB67001C8E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,14 @@
 		63CB797F231BFB67001C8E2B /* proCheckPrimeNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proCheckPrimeNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CB7983231BFB67001C8E2B /* proCheckPrimeNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proCheckPrimeNumberUITests.swift; sourceTree = "<group>"; };
 		63CB7985231BFB67001C8E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CB7996231C08B6001C8E2B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		63CB7998231C0A79001C8E2B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		63CB799A231C1627001C8E2B /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		63CB799D231C1F65001C8E2B /* sessionHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sessionHistoryModel.swift; path = ../sessionHistoryModel.swift; sourceTree = "<group>"; };
+		85DA76341F64A2EA30AEED93 /* Pods-proCheckPrimeNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumber.debug.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumber/Pods-proCheckPrimeNumber.debug.xcconfig"; sourceTree = "<group>"; };
+		94E8205464D647991F572C99 /* Pods-proCheckPrimeNumberUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumberUITests.release.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumberUITests/Pods-proCheckPrimeNumberUITests.release.xcconfig"; sourceTree = "<group>"; };
+		982180410D422703031AA48F /* Pods-proCheckPrimeNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumberTests.release.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumberTests/Pods-proCheckPrimeNumberTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9597B541C1D3A7C617423EE /* Pods-proCheckPrimeNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumber.release.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumber/Pods-proCheckPrimeNumber.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB746DCDE59B63EC4E02AC2D /* Pods_proCheckPrimeNumber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F11A3CB73CF545CC14BD88 /* Pods_proCheckPrimeNumberTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A93272B7BE9DDF32EC4186 /* Pods_proCheckPrimeNumberUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1636C456AFC1B6DBB2427149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85DA76341F64A2EA30AEED93 /* Pods-proCheckPrimeNumber.debug.xcconfig */,
+				D9597B541C1D3A7C617423EE /* Pods-proCheckPrimeNumber.release.xcconfig */,
+				1A0BDDEB70E23E64072423D5 /* Pods-proCheckPrimeNumberTests.debug.xcconfig */,
+				982180410D422703031AA48F /* Pods-proCheckPrimeNumberTests.release.xcconfig */,
+				46D4B96DC93BD3D7F09817A9 /* Pods-proCheckPrimeNumberUITests.debug.xcconfig */,
+				94E8205464D647991F572C99 /* Pods-proCheckPrimeNumberUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1AA8B14558293A0A22F5633C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F5AA4530679F88642CB545 /* Pods_proCheckPrimeNumber.framework */,
+				052CB193CF74C6E429704838 /* Pods_proCheckPrimeNumberTests.framework */,
+				58A45E67D8B6DC20A2DF5A04 /* Pods_proCheckPrimeNumberUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63CB7957231BFB62001C8E2B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +127,8 @@
 				63CB7977231BFB67001C8E2B /* proCheckPrimeNumberTests */,
 				63CB7982231BFB67001C8E2B /* proCheckPrimeNumberUITests */,
 				63CB7961231BFB62001C8E2B /* Products */,
+				1636C456AFC1B6DBB2427149 /* Pods */,
+				1AA8B14558293A0A22F5633C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +145,11 @@
 		63CB7962231BFB62001C8E2B /* proCheckPrimeNumber */ = {
 			isa = PBXGroup;
 			children = (
-				63CB7963231BFB62001C8E2B /* AppDelegate.swift */,
-				63CB7965231BFB62001C8E2B /* ViewController.swift */,
-				63CB7967231BFB62001C8E2B /* Main.storyboard */,
-				63CB796A231BFB67001C8E2B /* Assets.xcassets */,
-				63CB796C231BFB67001C8E2B /* LaunchScreen.storyboard */,
-				63CB796F231BFB67001C8E2B /* Info.plist */,
+				63CB799C231C1F28001C8E2B /* New Group */,
+				63CB7994231C0428001C8E2B /* Manager */,
+				63CB7992231C0387001C8E2B /* Extension */,
+				63CB7993231C03A1001C8E2B /* Features */,
+				63CB7991231C0303001C8E2B /* Assets */,
 			);
 			path = proCheckPrimeNumber;
 			sourceTree = "<group>";
@@ -125,6 +172,59 @@
 			path = proCheckPrimeNumberUITests;
 			sourceTree = "<group>";
 		};
+		63CB7991231C0303001C8E2B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63CB7963231BFB62001C8E2B /* AppDelegate.swift */,
+				63CB796A231BFB67001C8E2B /* Assets.xcassets */,
+				63CB796C231BFB67001C8E2B /* LaunchScreen.storyboard */,
+				63CB796F231BFB67001C8E2B /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		63CB7992231C0387001C8E2B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63CB7996231C08B6001C8E2B /* View.swift */,
+				63CB7998231C0A79001C8E2B /* Button.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63CB7993231C03A1001C8E2B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				63CB7995231C0503001C8E2B /* PrimeNumber */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		63CB7994231C0428001C8E2B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				63CB799A231C1627001C8E2B /* SessionManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		63CB7995231C0503001C8E2B /* PrimeNumber */ = {
+			isa = PBXGroup;
+			children = (
+				63CB7965231BFB62001C8E2B /* MainCheckPrimeNumberViewController.swift */,
+				63CB7967231BFB62001C8E2B /* maincheckprimenumberview.storyboard */,
+			);
+			path = PrimeNumber;
+			sourceTree = "<group>";
+		};
+		63CB799C231C1F28001C8E2B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				63CB799D231C1F65001C8E2B /* sessionHistoryModel.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63CB7988231BFB67001C8E2B /* Build configuration list for PBXNativeTarget "proCheckPrimeNumber" */;
 			buildPhases = (
+				02A515CB3269B4C9C668A83D /* [CP] Check Pods Manifest.lock */,
 				63CB795C231BFB62001C8E2B /* Sources */,
 				63CB795D231BFB62001C8E2B /* Frameworks */,
 				63CB795E231BFB62001C8E2B /* Resources */,
+				714AE4B7A5E7C4802DFFBA4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63CB798B231BFB67001C8E2B /* Build configuration list for PBXNativeTarget "proCheckPrimeNumberTests" */;
 			buildPhases = (
+				290C51C4E637E3D64D71BDED /* [CP] Check Pods Manifest.lock */,
 				63CB7970231BFB67001C8E2B /* Sources */,
 				63CB7971231BFB67001C8E2B /* Frameworks */,
 				63CB7972231BFB67001C8E2B /* Resources */,
@@ -167,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63CB798E231BFB67001C8E2B /* Build configuration list for PBXNativeTarget "proCheckPrimeNumberUITests" */;
 			buildPhases = (
+				FB7C24C2D06B04CB65BEF76D /* [CP] Check Pods Manifest.lock */,
 				63CB797B231BFB67001C8E2B /* Sources */,
 				63CB797C231BFB67001C8E2B /* Frameworks */,
 				63CB797D231BFB67001C8E2B /* Resources */,
@@ -231,7 +335,7 @@
 			files = (
 				63CB796E231BFB67001C8E2B /* LaunchScreen.storyboard in Resources */,
 				63CB796B231BFB67001C8E2B /* Assets.xcassets in Resources */,
-				63CB7969231BFB62001C8E2B /* Main.storyboard in Resources */,
+				63CB7969231BFB62001C8E2B /* maincheckprimenumberview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +355,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02A515CB3269B4C9C668A83D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-proCheckPrimeNumber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		290C51C4E637E3D64D71BDED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-proCheckPrimeNumberTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714AE4B7A5E7C4802DFFBA4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-proCheckPrimeNumber/Pods-proCheckPrimeNumber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-proCheckPrimeNumber/Pods-proCheckPrimeNumber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-proCheckPrimeNumber/Pods-proCheckPrimeNumber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7C24C2D06B04CB65BEF76D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-proCheckPrimeNumberUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63CB795C231BFB62001C8E2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63CB7966231BFB62001C8E2B /* ViewController.swift in Sources */,
+				63CB7966231BFB62001C8E2B /* MainCheckPrimeNumberViewController.swift in Sources */,
 				63CB7964231BFB62001C8E2B /* AppDelegate.swift in Sources */,
+				63CB7997231C08B6001C8E2B /* View.swift in Sources */,
+				63CB799B231C1627001C8E2B /* SessionManager.swift in Sources */,
+				63CB7999231C0A79001C8E2B /* Button.swift in Sources */,
+				63CB799E231C1F65001C8E2B /* sessionHistoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +487,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63CB7967231BFB62001C8E2B /* Main.storyboard */ = {
+		63CB7967231BFB62001C8E2B /* maincheckprimenumberview.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				63CB7968231BFB62001C8E2B /* Base */,
 			);
-			name = Main.storyboard;
+			name = maincheckprimenumberview.storyboard;
 			sourceTree = "<group>";
 		};
 		63CB796C231BFB67001C8E2B /* LaunchScreen.storyboard */ = {
@@ -430,11 +624,12 @@
 		};
 		63CB7989231BFB67001C8E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85DA76341F64A2EA30AEED93 /* Pods-proCheckPrimeNumber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = proCheckPrimeNumber/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/proCheckPrimeNumber/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +643,12 @@
 		};
 		63CB798A231BFB67001C8E2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9597B541C1D3A7C617423EE /* Pods-proCheckPrimeNumber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = proCheckPrimeNumber/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/proCheckPrimeNumber/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +662,7 @@
 		};
 		63CB798C231BFB67001C8E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0BDDEB70E23E64072423D5 /* Pods-proCheckPrimeNumberTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +683,7 @@
 		};
 		63CB798D231BFB67001C8E2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982180410D422703031AA48F /* Pods-proCheckPrimeNumberTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +704,7 @@
 		};
 		63CB798F231BFB67001C8E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D4B96DC93BD3D7F09817A9 /* Pods-proCheckPrimeNumberUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +724,7 @@
 		};
 		63CB7990231BFB67001C8E2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E8205464D647991F572C99 /* Pods-proCheckPrimeNumberUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

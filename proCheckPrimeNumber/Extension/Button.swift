@@ -23,4 +23,10 @@ extension UIButton {
         self.setTitleColor(UIColor.black, for: .normal)
         self.isEnabled = true
     }
+    
+    func setBtnHistory() {
+        self.layer.cornerRadius = 8
+        self.backgroundColor = UIColor.orange
+        self.setTitleColor(UIColor.white, for: .normal)
+    }
 }

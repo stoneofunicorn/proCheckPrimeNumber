@@ -44,7 +44,7 @@ final class SessionManage {
                 } else {
                     if i == count-1 {
                         print("Save")
-                        let key: String = "saveHistory\(i)"
+                        let key: String = "saveHistory\(count)"
                         let save: [String:String] = ["dicData": toData, "dicResult": toResult]
                         UserDefaults.standard.set(save, forKey: key)
                         saveCountHistory()

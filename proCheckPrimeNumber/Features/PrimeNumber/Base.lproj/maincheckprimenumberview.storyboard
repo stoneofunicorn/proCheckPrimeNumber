@@ -66,16 +66,29 @@
                                             <constraint firstItem="Bx1-hf-ggM" firstAttribute="centerX" secondItem="9kJ-Sz-Hcq" secondAttribute="centerX" id="b4Y-tu-66Q"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-Mr-hPs">
+                                        <rect key="frame" x="16" y="708" width="382" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5wX-s4-keg"/>
+                                        </constraints>
+                                        <state key="normal" title="button"/>
+                                        <connections>
+                                            <action selector="actionSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYe-Zd-EBZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5tw-G0-NlM" firstAttribute="top" secondItem="dbo-VX-obx" secondAttribute="bottom" constant="24" id="1UA-ga-oms"/>
                                     <constraint firstAttribute="trailing" secondItem="5tw-G0-NlM" secondAttribute="trailing" constant="16" id="8Dx-IG-Fw6"/>
                                     <constraint firstItem="9kJ-Sz-Hcq" firstAttribute="centerX" secondItem="jw5-lu-InF" secondAttribute="centerX" id="8rV-Fz-woJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="gLP-Mr-hPs" secondAttribute="bottom" constant="16" id="BHp-bk-TDb"/>
                                     <constraint firstItem="dbo-VX-obx" firstAttribute="top" secondItem="jw5-lu-InF" secondAttribute="top" constant="16" id="CUI-Ub-GyT"/>
                                     <constraint firstItem="dbo-VX-obx" firstAttribute="leading" secondItem="jw5-lu-InF" secondAttribute="leading" constant="16" id="Qvl-Ng-V57"/>
                                     <constraint firstAttribute="trailing" secondItem="dbo-VX-obx" secondAttribute="trailing" constant="16" id="Shi-d1-DKg"/>
+                                    <constraint firstItem="gLP-Mr-hPs" firstAttribute="leading" secondItem="jw5-lu-InF" secondAttribute="leading" constant="16" id="aV9-K3-cMp"/>
                                     <constraint firstItem="9kJ-Sz-Hcq" firstAttribute="centerY" secondItem="jw5-lu-InF" secondAttribute="centerY" id="ebD-Ae-ma7"/>
+                                    <constraint firstAttribute="trailing" secondItem="gLP-Mr-hPs" secondAttribute="trailing" constant="16" id="lAh-VJ-0tc"/>
                                     <constraint firstItem="5tw-G0-NlM" firstAttribute="leading" secondItem="jw5-lu-InF" secondAttribute="leading" constant="16" id="mFW-xg-zaX"/>
                                 </constraints>
                             </view>
@@ -91,6 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ubU-WQ-yuw"/>
                     <connections>
+                        <outlet property="btnNextPage" destination="gLP-Mr-hPs" id="tKz-Xk-e21"/>
                         <outlet property="btnSubmit" destination="5tw-G0-NlM" id="AfL-ws-u86"/>
                         <outlet property="fieldInsert" destination="dbo-VX-obx" id="P22-k9-fkZ"/>
                         <outlet property="labelResult" destination="Bx1-hf-ggM" id="q7Y-Fl-xgg"/>
@@ -101,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation-->
         <scene sceneID="1vo-v3-pJs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y9K-mB-OTb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y9K-mB-OTb" customClass="Navigation" customModule="proCheckPrimeNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="weh-gd-2Ka">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -20,6 +20,11 @@
 		63CB7999231C0A79001C8E2B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB7998231C0A79001C8E2B /* Button.swift */; };
 		63CB799B231C1627001C8E2B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB799A231C1627001C8E2B /* SessionManager.swift */; };
 		63CB799E231C1F65001C8E2B /* sessionHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB799D231C1F65001C8E2B /* sessionHistoryModel.swift */; };
+		63CB79A1231CEA95001C8E2B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB79A0231CEA95001C8E2B /* HistoryViewController.swift */; };
+		63CB79A3231CEBC5001C8E2B /* historyview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB79A2231CEBC5001C8E2B /* historyview.storyboard */; };
+		63CB79A6231CED21001C8E2B /* TitleHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB79A5231CED21001C8E2B /* TitleHistoryViewCell.swift */; };
+		63CB79A8231CEE0D001C8E2B /* titlehistorycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CB79A7231CEE0D001C8E2B /* titlehistorycell.xib */; };
+		63CB79AA231CF5C7001C8E2B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB79A9231CF5C7001C8E2B /* NavigationController.swift */; };
 		BB746DCDE59B63EC4E02AC2D /* Pods_proCheckPrimeNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F5AA4530679F88642CB545 /* Pods_proCheckPrimeNumber.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,11 @@
 		63CB7998231C0A79001C8E2B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		63CB799A231C1627001C8E2B /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		63CB799D231C1F65001C8E2B /* sessionHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sessionHistoryModel.swift; path = ../sessionHistoryModel.swift; sourceTree = "<group>"; };
+		63CB79A0231CEA95001C8E2B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		63CB79A2231CEBC5001C8E2B /* historyview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = historyview.storyboard; sourceTree = "<group>"; };
+		63CB79A5231CED21001C8E2B /* TitleHistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHistoryViewCell.swift; sourceTree = "<group>"; };
+		63CB79A7231CEE0D001C8E2B /* titlehistorycell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = titlehistorycell.xib; sourceTree = "<group>"; };
+		63CB79A9231CF5C7001C8E2B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		85DA76341F64A2EA30AEED93 /* Pods-proCheckPrimeNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumber.debug.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumber/Pods-proCheckPrimeNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		94E8205464D647991F572C99 /* Pods-proCheckPrimeNumberUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumberUITests.release.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumberUITests/Pods-proCheckPrimeNumberUITests.release.xcconfig"; sourceTree = "<group>"; };
 		982180410D422703031AA48F /* Pods-proCheckPrimeNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proCheckPrimeNumberTests.release.xcconfig"; path = "Target Support Files/Pods-proCheckPrimeNumberTests/Pods-proCheckPrimeNumberTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +198,7 @@
 			children = (
 				63CB7996231C08B6001C8E2B /* View.swift */,
 				63CB7998231C0A79001C8E2B /* Button.swift */,
+				63CB79A9231CF5C7001C8E2B /* NavigationController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 		63CB7993231C03A1001C8E2B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				63CB799F231CEA06001C8E2B /* History */,
 				63CB7995231C0503001C8E2B /* PrimeNumber */,
 			);
 			path = Features;
@@ -223,6 +235,25 @@
 				63CB799D231C1F65001C8E2B /* sessionHistoryModel.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		63CB799F231CEA06001C8E2B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				63CB79A4231CECE7001C8E2B /* View */,
+				63CB79A0231CEA95001C8E2B /* HistoryViewController.swift */,
+				63CB79A2231CEBC5001C8E2B /* historyview.storyboard */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		63CB79A4231CECE7001C8E2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63CB79A5231CED21001C8E2B /* TitleHistoryViewCell.swift */,
+				63CB79A7231CEE0D001C8E2B /* titlehistorycell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63CB796E231BFB67001C8E2B /* LaunchScreen.storyboard in Resources */,
+				63CB79A8231CEE0D001C8E2B /* titlehistorycell.xib in Resources */,
 				63CB796B231BFB67001C8E2B /* Assets.xcassets in Resources */,
+				63CB79A3231CEBC5001C8E2B /* historyview.storyboard in Resources */,
 				63CB7969231BFB62001C8E2B /* maincheckprimenumberview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +483,10 @@
 				63CB7964231BFB62001C8E2B /* AppDelegate.swift in Sources */,
 				63CB7997231C08B6001C8E2B /* View.swift in Sources */,
 				63CB799B231C1627001C8E2B /* SessionManager.swift in Sources */,
+				63CB79AA231CF5C7001C8E2B /* NavigationController.swift in Sources */,
+				63CB79A6231CED21001C8E2B /* TitleHistoryViewCell.swift in Sources */,
 				63CB7999231C0A79001C8E2B /* Button.swift in Sources */,
+				63CB79A1231CEA95001C8E2B /* HistoryViewController.swift in Sources */,
 				63CB799E231C1F65001C8E2B /* sessionHistoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

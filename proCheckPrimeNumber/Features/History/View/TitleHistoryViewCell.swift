@@ -11,6 +11,7 @@ import UIKit
 
 final class TitleHistoryViewCell: UICollectionViewCell {
     @IBOutlet weak var labelTItle: UILabel!
+    @IBOutlet weak var viewStatus: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -19,5 +20,10 @@ final class TitleHistoryViewCell: UICollectionViewCell {
 extension TitleHistoryViewCell {
     func setupUI(toData: String, toResult: String) {
         labelTItle.text = "\(toData) is \(toResult)"
+        if toResult == "Prime" {
+            viewStatus.setViewCircleBGPrime()
+        } else {
+            viewStatus.setViewCircleBGNotPrime()
+        }
     }
 }

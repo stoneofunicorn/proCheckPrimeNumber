@@ -20,4 +20,22 @@ extension UIView {
         self.layer.cornerRadius = self.frame.width/2
         self.backgroundColor = UIColor.blue
     }
+    
+    func pageFromRight() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        self.window!.layer.add(transition, forKey: kCATransition)
+    }
+    
+    func pageFromLeft() {
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        self.window!.layer.add(transition, forKey: kCATransition)
+    }
 }

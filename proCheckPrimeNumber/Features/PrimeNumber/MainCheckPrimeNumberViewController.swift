@@ -14,6 +14,7 @@ final class MainCheckPrimeNumberViewController: UIViewController {
     @IBOutlet weak var btnSubmit: UIButton!
     @IBOutlet weak var viewBG: UIView!
     @IBOutlet weak var labelResult: UILabel!
+    @IBOutlet weak var btnNextPage: UIButton!
     
     let TAG: String = "MainCheckPrimeNumberViewController"
     var session: SessionManage!
@@ -23,17 +24,21 @@ final class MainCheckPrimeNumberViewController: UIViewController {
         setupUI()
         hideKeyboard()
         session = SessionManage()
-        print("\(session.getCountHistory())")
-        for i in 0...session.getCountHistory() {
-            print("\(session.getHistory(toNum: i).dicData)")
-        }
-        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.topItem?.title = "Check Prime"
+    }
+    
     @IBAction func actionSubmit(_ sender: Any) {
         onSubmit()
     }
     @IBAction func actionChangeText(_ sender: Any) {
         onCheckButton()
+    }
+    @IBAction func actionSegue(_ sender: Any) {
+        segueHistory()
     }
 }
 
@@ -44,6 +49,9 @@ extension MainCheckPrimeNumberViewController {
         btnSubmit.setTitle("Submit", for: .normal)
         btnSubmit.setBtnSubmitOff()
         labelResult.text = "Result"
+        btnNextPage.setTitle("HISTORY", for: .normal)
+        btnNextPage.setBtnHistory()
+        
     }
     
     private func onSubmit() {
@@ -102,6 +110,14 @@ extension MainCheckPrimeNumberViewController {
     
     private func btnSubmitNotAction() {
         btnSubmit.setBtnSubmitOff()
+    }
+    
+    private func segueHistory() {
+        let storyboard = UIStoryboard(name: "historyview", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "idHistory") as! HistoryViewController
+        let navigationController = Navigation(rootViewController: controller)
+        view.pageFromRight()
+        self.present(navigationController, animated: false)
     }
     
     private func hideKeyboard() {

@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+final class TitleHistoryViewCell: UICollectionViewCell {
+    @IBOutlet weak var labelTItle: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}
+
+extension TitleHistoryViewCell {
+    func setupUI(toData: String, toResult: String) {
+        labelTItle.text = "\(toData) is \(toResult)"
+    }
+}
